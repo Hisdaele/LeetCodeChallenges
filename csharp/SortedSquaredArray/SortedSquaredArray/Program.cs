@@ -42,6 +42,6 @@
                 Console.Write($"{val},");
             }
             Console.WriteLine("]");
-        }
+        }   
     }
 }
