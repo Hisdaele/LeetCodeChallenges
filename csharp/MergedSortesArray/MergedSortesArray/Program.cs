@@ -21,9 +21,9 @@
             int last2 = n - 1;
             int lastMerge = m + n - 1;
 
-            while((last1 >= 0) && (last2 >= 0))
+            while(last2 >= 0)
             {
-                if (nums1[last1] > nums2[last2])
+                if ( last1 >= 0 && nums1[last1] > nums2[last2])
                 {
                     nums1[lastMerge--] = nums1[last1--];
                 }
@@ -31,16 +31,6 @@
                 {
                     nums1[lastMerge--] = nums2[last2--];
                 }
-            }
-
-            while (last1 >= 0)
-            {
-                nums1[lastMerge--] = nums1[last1--];
-            }
-
-            while (last2 >= 0)
-            {
-                nums1[lastMerge--] = nums2[last2--];
             }
         }
     }
