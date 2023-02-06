@@ -14,7 +14,7 @@
                 Console.Write(test[i] + ",");
             }
 
-            Console.WriteLine("\n Remove duplicates in a sorted array");
+            Console.WriteLine("\nRemove duplicates in a sorted array");
             int[] test2 = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
             count = RemoveDuplicates(test2);
             for (int i = 0; i < count; i++)
