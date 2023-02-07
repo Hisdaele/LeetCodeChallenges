@@ -27,6 +27,8 @@ namespace ValidMountainArray
                 }
             }
 
+            if(top == 0 || top == arr.Length - 1) { return false; }
+
             for (; top < arr.Length - 1; top++)
             {
                 if (arr[top] <= arr[top + 1])
