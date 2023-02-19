@@ -6,7 +6,7 @@ namespace Challenges
     {
         static void Main(string[] args)
         {
-            var chall = new SortArrayByParity();
+            var chall = new HeightChecker();
             chall.Test();
         }
 
